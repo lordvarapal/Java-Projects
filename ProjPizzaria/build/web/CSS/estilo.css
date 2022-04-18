@@ -21,6 +21,7 @@ body{
 }
 #top {
     background-color: #E4C2BB;
+    //background-color: #7B2F4E;
     height: 300px;
     width: 1000px;
     margin: 0 auto;
@@ -39,6 +40,7 @@ ul{
     padding: 0;
     display: flex;
 }
+
 li{
     list-style: none;
     margin: 0 16px;
@@ -60,9 +62,12 @@ a{
 }
 a:hover {
     background-color: #7B2F4E;
+    //background-color: #E4C2BB;
     transform: scale(1.2);
-    padding: 16px;
-    border: 40px;
+    padding: 18px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+ //   border: 140px;
 }
 #mid{
     width:1000px;

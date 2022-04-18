@@ -1,0 +1,50 @@
+.box{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin: 0 auto;
+    color: #7B2F4E
+    
+}
+fieldset{
+    border: 3px solid #7B2F4E;
+    padding: 15px;
+    border-radius: 15px;
+}
+legend{
+    border: 3px solid #7B2F4E;
+    background-color: #7B2F4E;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    color: beige;
+    
+}
+.inputBox{
+    position: relative;
+    
+}
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #7B2F4E;
+    outline: none;
+    color: #7B2F4E;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+    
+}
+.inputUser:focus ~ .labelInput,
+.inputuser>:valid ~ labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: #7B2F4E;
+}
