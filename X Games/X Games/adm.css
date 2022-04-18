@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.admMenu{
+	width:100px;
+	height:400px;
+}
+.admMeunu a{
+	background-color:#00F;
+	size:200px;
+}

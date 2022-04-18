@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	 margin:0;
+     background-image:url(img/img12.jpg);
+}
+.principal{
+	width:999px;
+	height:auto;
+	margin: 0 auto;
+
+}
+/* Administrador */
+.topoAdm{
+	margin:0;
+	width:999px;
+	height:260px;
+	background-image:url(img/imgTopAdm.jpg);
+	background-repeat:no-repeat;
+}
+/* Inicio */
+.topo{
+	margin:0;
+	width:999px;
+	height:260px;
+	background-image: url(img/imgTopo.jpg);
+	background-repeat:no-repeat;
+}
+.menu{
+	width:999px;
+	height:50px;
+	background-image: url(img/menu.png);
+	background-repeat:repeat-x;
+}
+.link {
+	display: block;
+	float: left;
+	width: 140px;
+	height: 50px;
+	text-align: center;
+	line-height: 45px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	font-family: arial;	
+}
+.menu a{
+	color: #FFF;
+	text-decoration: none;
+	padding: 16px;
+	float: left;
+}
+.menu a:hover {
+	background-image:url(img/menu2.png);
+	background-repeat:repeat-x;
+}
+.bot{
+	width:999px;
+	height:60px;
+	float: left;
+}
+.mid{
+	width:999px;
+	height:auto;
+}

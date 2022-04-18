@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/* CSS Document */
+.login{
+	background-image:url(img/login.png);
+	height:150px;
+	width:150px;
+	float:left;
+}
+.caixaIframe{
+	width:835px;
+	height:450px;
+	float: left;
+}
+.caixa{
+	width:800px;
+	height:450px;
+	float: left;
+}
+.flash{
+	background-color:#FFF;
+	width:680px;
+	margin-left:4px;
+	height:150px;
+	float: left;
+}
+.propaganda{
+	width:160px;
+	height:600px;
+	background-image:url(img/ad160x600.gif);
+	float:right;
+}
+.actions{
+	
+	float:left;
+	height:100px;
+	width:990px;
+}
+.link{
+	width:990px;
+	height:100px;
+	display: block;
+	letter-spacing: 100px;
+}
+.link a{
+	padding-right:50px;
+	padding-left:50px;
+	float:left;
+}
+/*.link a:hover{
+	color: #0F0;
+	text-decoration: underline;	
+}*/
+.vazio{
+	background-image:url(img/img05.gif);
+	background-repeat:repeat;
+	color:#FFF;
+	width:999px;
+	height:15px;
+	float:left;
+}
+

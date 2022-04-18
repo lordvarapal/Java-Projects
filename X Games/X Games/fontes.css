@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* CSS Document */
+span.titulo1{
+	margin-left:50px;
+	font-size:36px;
+	color:#0F0;
+	background-position: 100px;
+}
+span.titulo2{
+	font-size:24px;
+	color:#CCC;
+	float:none;
+	text-align: left;
+}
+
+.texto{
+	color: #999;
+	font-size: 14px;
+	line-height: normal;
+	text-align: justify;
+	text-indent: 20px;
+	margin-right: 50px;
+	margin-left: 20px;
+}
+
+
+.tituloLogin{
+	color:#060;
+	size: 16px;
+	font-weight: bold;
+	font-size: 18px;
+}
+.usuarioSenha{
+	color:#FFF;
+}
