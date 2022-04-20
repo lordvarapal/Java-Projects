@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css"></link>
+        <link rel="stylesheet" type="text/css" href="CSS/contato.css"></link>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+        <script> $("#tel").mask("(99) 99999-9999"); </script>
+        <style>
+            .btn_reset{
+                border: none;
+                color: white;
+                background-color: darkcyan;
+                width: 100%;
+                padding: 15px;
+                border-radius: 10px;
+                font-size: 16px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="principal">
+            <div id="top"></div>
+            <div id="menu">
+                <ul>
+                    <li><a href="##">Karolina</a></li>
+                    <li><a href="##">Fisioterapia</a></li>
+                    <li><a href="##">Promoções</a></li>
+                    <li><a href="##">Quem sou</a></li>
+                    <li><a href="##">Redes Sociais</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </div>
+            <div id="mid">
+                <div id="foto">
+
+                </div>
+                <div class="box">
+                    <form action="">                    
+                        <fieldset id="formContato">
+                            <legend>CONTATO</legend>
+                            Teste: <input ng-model="teste" type="text">
+                            Ola {{teste}}
+                            <br/><div class="inputBox">
+                                <input type="text" name="nome" id="nome" class="inputUser" required="TRUE"/>               
+                                <label for="nome" class="labelInput"> Nome </label>
+                            </div>
+                            <br/><br/><div class="inputBox">
+                                <input type="email" name="email" id="email" class="inputUser" required="TRUE" />               
+                                <label for="nome" class="labelInput"> E-mail </label>
+                            </div>
+                            <br/><br/><div class="inputBox">
+                                <input type="tel" name="tel" id="tel" class="inputUser" required="TRUE" maxlength="11"/>               
+                                <label for="nome" class="labelInput"> Telefone </label>
+                            </div>
+                            <br/><br/><div class="inputBox">
+                                <label for="nasc"> Datade Nascimento </label>
+                                <input type="date" id="nasc"/>                   
+                            </div>
+                            <br/>Atividade<br/>
+                            <br/><input type="radio" name="atividade" id="fisioterapia" required=""/>               
+                            <label for="fisioterapia">Fisioterapia </label>
+                            <br/><input type="radio" name="atividade" id="rpg"/>               
+                            <label for="rpg">RPG </label>
+                            <br/><input type="radio" name="atividade" id="pilates"/>               
+                            <label for="pilates">Pilates </label>
+                            <br/>
+                            <div class="inputBox">
+                                <br/><label for="assunto">Assunto</label>
+                                <select id="assunto" name="assunto" required>
+                                    <option value="Curiosidade"> Curiosidade </option>
+                                    <option value="Endereco"> Endereço</option>
+                                    <option value="Planos"> Planos </option>
+                                    <option value="Duvidas"> Dúvidas </option>
+                                    <option value="Outros"> Outros </option>
+                                </select>
+                            </div>
+                            <br/><br/>
+                            <div class="inputBox">
+                                <textarea type="textarea" id="txt_area" name="txt_area" rows="6" cols="30" maxlength="500" spellcheck="true" required></textarea>               
+                            </div>
+                            <br><br>
+                            <input type="submit" id="submit" name="submit" value="Enviar"/>
+                            <br/><br/><button type="reset" class="btn_reset" id="reset" name="reset">Limpar</button>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
