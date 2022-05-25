@@ -12,7 +12,16 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <link rel="stylesheet" type="text/css" href="CSS/contato.css"></link>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-        <script> $("#tel").mask("(99) 99999-9999"); </script>
+        <script>
+            function maskCel(){
+                var cel = document.getElementById('tel')
+                cel.value += '('
+                if(cel.value.length ==  || cel.value.length == 7)
+                    cpf.value += '.' 
+                if(cel.value.length == 11)
+                    cpf.value += '-'
+            }
+        </script>
         <style>
             .btn_reset{
                 border: none;
@@ -43,11 +52,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
                 </div>
                 <div class="box">
-                    <form action="">                    
+                    <form action="" method="post">                    
                         <fieldset id="formContato">
                             <legend>CONTATO</legend>
-                            Teste: <input ng-model="teste" type="text">
-                            Ola {{teste}}
                             <br/><div class="inputBox">
                                 <input type="text" name="nome" id="nome" class="inputUser" required="TRUE"/>               
                                 <label for="nome" class="labelInput"> Nome </label>
@@ -57,8 +64,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                                 <label for="nome" class="labelInput"> E-mail </label>
                             </div>
                             <br/><br/><div class="inputBox">
-                                <input type="tel" name="tel" id="tel" class="inputUser" required="TRUE" maxlength="11"/>               
-                                <label for="nome" class="labelInput"> Telefone </label>
+                                <input type="tel" name="tel" id="tel" class="inputUser" required="TRUE" maxlength="16" onkeyup="maskCel()"/>               
+                                <label for="nome" class="labelInput"> Celular </label>
                             </div>
                             <br/><br/><div class="inputBox">
                                 <label for="nasc"> Datade Nascimento </label>
@@ -98,3 +105,4 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 </body>
 </html>
 
+<!<!-- $("#tel").mask("(99) 99999-9999"); -->
